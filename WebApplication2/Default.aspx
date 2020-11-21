@@ -7,43 +7,39 @@
         <p>
             <strong>Order No. </strong>&nbsp;
             <asp:TextBox ID="txtId" runat="server"></asp:TextBox>&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="Cargar" runat="server" OnClick="cargar" Text="..." />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Cargar" runat="server" OnClick="cargar" Text="..." />&nbsp;
             <strong> Ordendate </strong>&nbsp;
-            <asp:TextBox ID="txtDate" runat="server" Enabled="false"></asp:TextBox>
+            <asp:TextBox ID="txtDate" runat="server" Enabled="false"></asp:TextBox>&nbsp;
         </p>
     </center>
     <asp:Panel ID="Panel1" runat="server" GroupingText="Customer" Height="137px">
         <table>
             <tbody>
                 <tr>
-                    <th style="height: 37px">Name:</th>
+                    <th style="height: 37px">Name: </th>
                     <td style="height: 37px">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:TextBox ID="txtName" runat="server" Enabled="false" width="1000px"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
-                    <th style="height: 37px">Adress:</th>
+                    <th style="height: 37px">Adress: </th>
                     <td style="height: 37px">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:TextBox ID="txtAdress" runat="server" Enabled="false" width="1000px"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
-                    <th style="height: 42px">Phone:</th>
+                    <th style="height: 42px">Phone: </th>
                     <td style="height: 42px">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:TextBox ID="txtPhone" runat="server" Enabled="false" width="1000px"></asp:TextBox>
                     </td>
                 </tr>
             </tbody>
         </table>
     </asp:Panel>
-
+    <br /><br />
+    <asp:Panel ID="Panel2" runat="server" GroupingText="Informacion" Height="137px">
     <p>
-        <br /><br />
-        <strong>Employe</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+        <strong>Employe</strong>&nbsp;
         <asp:TextBox ID="txtEmploye" runat="server" Enabled="false" width="1000px"></asp:TextBox>
     </p>
 
@@ -51,9 +47,10 @@
     <br />
     <p>
         <br /><br />
-        <strong>Total:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <strong>Total:</strong>&nbsp;
         <asp:TextBox ID="txtTotal" runat="server" Enabled="false" width="1000px"></asp:TextBox>
     </p>
-
+        </asp:Panel>
+    <br /><br />
 </asp:Content>
 

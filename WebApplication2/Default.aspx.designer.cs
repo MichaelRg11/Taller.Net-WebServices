@@ -87,6 +87,15 @@ namespace WebApplication2
         protected global::System.Web.UI.WebControls.TextBox txtPhone;
 
         /// <summary>
+        /// Control Panel2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel2;
+
+        /// <summary>
         /// Control txtEmploye.
         /// </summary>
         /// <remarks>
