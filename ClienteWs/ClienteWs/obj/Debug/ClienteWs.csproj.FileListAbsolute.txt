@@ -1,0 +1,20 @@
+C:\Users\Luis Sanchez\source\repos\ClienteWs\ClienteWs\bin\Debug\ClienteWs.exe.config
+C:\Users\Luis Sanchez\source\repos\ClienteWs\ClienteWs\bin\Debug\ClienteWs.exe
+C:\Users\Luis Sanchez\source\repos\ClienteWs\ClienteWs\bin\Debug\ClienteWs.pdb
+C:\Users\Luis Sanchez\source\repos\ClienteWs\ClienteWs\obj\Debug\ClienteWs.csprojAssemblyReference.cache
+C:\Users\Luis Sanchez\source\repos\ClienteWs\ClienteWs\obj\Debug\ClienteWs.Form1.resources
+C:\Users\Luis Sanchez\source\repos\ClienteWs\ClienteWs\obj\Debug\ClienteWs.Properties.Resources.resources
+C:\Users\Luis Sanchez\source\repos\ClienteWs\ClienteWs\obj\Debug\ClienteWs.csproj.GenerateResource.cache
+C:\Users\Luis Sanchez\source\repos\ClienteWs\ClienteWs\obj\Debug\ClienteWs.csproj.CoreCompileInputs.cache
+C:\Users\Luis Sanchez\source\repos\ClienteWs\ClienteWs\obj\Debug\ClienteWs.exe
+C:\Users\Luis Sanchez\source\repos\ClienteWs\ClienteWs\obj\Debug\ClienteWs.pdb
+C:\Users\Maicolrg11\Desktop\ClienteWs\ClienteWs\bin\Debug\ClienteWs.exe.config
+C:\Users\Maicolrg11\Desktop\ClienteWs\ClienteWs\bin\Debug\ClienteWs.exe
+C:\Users\Maicolrg11\Desktop\ClienteWs\ClienteWs\bin\Debug\ClienteWs.pdb
+C:\Users\Maicolrg11\Desktop\ClienteWs\ClienteWs\obj\Debug\ClienteWs.csprojAssemblyReference.cache
+C:\Users\Maicolrg11\Desktop\ClienteWs\ClienteWs\obj\Debug\ClienteWs.Form1.resources
+C:\Users\Maicolrg11\Desktop\ClienteWs\ClienteWs\obj\Debug\ClienteWs.Properties.Resources.resources
+C:\Users\Maicolrg11\Desktop\ClienteWs\ClienteWs\obj\Debug\ClienteWs.csproj.GenerateResource.cache
+C:\Users\Maicolrg11\Desktop\ClienteWs\ClienteWs\obj\Debug\ClienteWs.csproj.CoreCompileInputs.cache
+C:\Users\Maicolrg11\Desktop\ClienteWs\ClienteWs\obj\Debug\ClienteWs.exe
+C:\Users\Maicolrg11\Desktop\ClienteWs\ClienteWs\obj\Debug\ClienteWs.pdb

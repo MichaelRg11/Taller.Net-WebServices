@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="BuscarCustumers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="NumberOrder" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarCustumersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarCustumersResult" type="tns:Custumers" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Custumers">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Number" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContactLastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ConstactFirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AddressLine1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AddressLine2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Postal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SalesRepEmployeeNumber" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreditLimit" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BuscarOrden">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="NumberOrder" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarOrdenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarOrdenResult" type="tns:Ordes" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Ordes">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="OrderNumber" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrderDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="RequiredDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ShippedDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Comments" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CustomerNumber" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BuscarEmployees">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="OrderNumber" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarEmployeesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarEmployeesResult" type="tns:Employees" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Employees">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="EmployeeNumber" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Extension" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BuscarProducto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="OrderNumber" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarProductoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarProductoResult" type="tns:ArrayOfProducts" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProducts">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Products" nillable="true" type="tns:Products" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Products">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ProductCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductLine" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductScale" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductVendedor" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductDescription" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Quantity" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Price" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="MSRP" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="BuscarCustumersSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarCustumers" />
+  </wsdl:message>
+  <wsdl:message name="BuscarCustumersSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarCustumersResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarOrdenSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarOrden" />
+  </wsdl:message>
+  <wsdl:message name="BuscarOrdenSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarOrdenResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarEmployeesSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarEmployees" />
+  </wsdl:message>
+  <wsdl:message name="BuscarEmployeesSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarEmployeesResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarProductoSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarProducto" />
+  </wsdl:message>
+  <wsdl:message name="BuscarProductoSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarProductoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSCustumersSoap">
+    <wsdl:operation name="BuscarCustumers">
+      <wsdl:input message="tns:BuscarCustumersSoapIn" />
+      <wsdl:output message="tns:BuscarCustumersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarOrden">
+      <wsdl:input message="tns:BuscarOrdenSoapIn" />
+      <wsdl:output message="tns:BuscarOrdenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEmployees">
+      <wsdl:input message="tns:BuscarEmployeesSoapIn" />
+      <wsdl:output message="tns:BuscarEmployeesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarProducto">
+      <wsdl:input message="tns:BuscarProductoSoapIn" />
+      <wsdl:output message="tns:BuscarProductoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSCustumersSoap" type="tns:WSCustumersSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BuscarCustumers">
+      <soap:operation soapAction="http://tempuri.org/BuscarCustumers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarOrden">
+      <soap:operation soapAction="http://tempuri.org/BuscarOrden" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEmployees">
+      <soap:operation soapAction="http://tempuri.org/BuscarEmployees" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarProducto">
+      <soap:operation soapAction="http://tempuri.org/BuscarProducto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSCustumersSoap12" type="tns:WSCustumersSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BuscarCustumers">
+      <soap12:operation soapAction="http://tempuri.org/BuscarCustumers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarOrden">
+      <soap12:operation soapAction="http://tempuri.org/BuscarOrden" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEmployees">
+      <soap12:operation soapAction="http://tempuri.org/BuscarEmployees" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarProducto">
+      <soap12:operation soapAction="http://tempuri.org/BuscarProducto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSCustumers">
+    <wsdl:port name="WSCustumersSoap" binding="tns:WSCustumersSoap">
+      <soap:address location="https://localhost:44306/WSPedidos.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSCustumersSoap12" binding="tns:WSCustumersSoap12">
+      <soap12:address location="https://localhost:44306/WSPedidos.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
